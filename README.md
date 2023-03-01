@@ -74,7 +74,8 @@ $ yarn run prod
 
 O projeto possui uma collection com todas as requests criadas até o momento e se encontra na raiz do projeto com o nome: **Personal - Ilumeo.postman_collection.json**
 
-**Através dela é possivel criar usuários para testar todo o sistema.**
+**Através dela é possivel criar usuários para testar todo o sistema. Para isso, acesse a pasta "Auth", rota "Criar".**
+**Um código aleatório será gerado, para que as batidas sejam realizadas**
 
 ---
 
