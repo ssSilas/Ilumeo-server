@@ -2,9 +2,6 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
   <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
@@ -24,13 +21,39 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository
+
+---
+
+## Techs -> Sequelize | Postgres | Nestjs | Typescript
+
+---
 
 ## Installation
 
 ```bash
-$ yarn install
+yarn install
 ```
+
+## Database -  **Postgres**
+
+O projeto utiliza um banco local (Postgres) até o momento. Crie/Utilize uma conexão com o banco para criar um banco de dados com o nome "db_ilumeo" conforme informado no arquivo **.env.example**
+
+### Sequelize Sync
+
+O Sequelize possui um método para sincronizar as tabelas e suas devidas configurações presentes no projeto com o banco de dados. Para isso:
+
+- Crie um banco de dados com o nome "diversity_store" (ou nome que informar nas variaveis de ambiente) e descomente as linhas abaixo, que se encontram presente no arquivo ***app.module.ts***
+
+```bash
+autoLoadModels: true,
+synchronize: true,
+```
+
+Após descomentar, execute o projeto. Valide se tudo foi sincronizado e comente as linhas novamente.
+***É aconselhado executar essa ação apenas em ambiente de teste**.
+
+---
 
 ## Running the app
 
@@ -39,24 +62,19 @@ $ yarn install
 $ yarn run start
 
 # watch mode
-$ yarn run start:dev
+$ yarn run dev
 
 # production mode
-$ yarn run start:prod
+$ yarn run prod
 ```
 
-## Test
+---
 
-```bash
-# unit tests
-$ yarn run test
+## Frontend
 
-# e2e tests
-$ yarn run test:e2e
+O projeto possui um Frontend integrado com este projeto. Caso queira acessar, [clique aqui](git@github.com:ssSilas/ilumeo-frontend.git).
 
-# test coverage
-$ yarn run test:cov
-```
+---
 
 ## Support
 
