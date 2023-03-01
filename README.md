@@ -70,6 +70,16 @@ $ yarn run prod
 
 ---
 
+## Collection - Postman | Criar usuários
+
+O projeto possui uma collection com todas as requests criadas até o momento e se encontra na raiz do projeto com o nome: **Personal - Ilumeo.postman_collection.json**
+
+**Através dela é possivel criar usuários para testar todo o sistema.**
+
+---
+
+---
+
 ## Frontend
 
 O projeto possui um Frontend integrado com este projeto. Caso queira acessar, [clique aqui](git@github.com:ssSilas/ilumeo-frontend.git).
